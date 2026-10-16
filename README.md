@@ -191,7 +191,7 @@ command -v pip3
 
 ###### To check, which Package Manager is installed you can use below script. 
 
-
+```      
 echo "Checking package managers..."
 
 for cmd in brew port conda mamba pip pip3 npm yarn pnpm \
@@ -202,3 +202,4 @@ for cmd in brew port conda mamba pip pip3 npm yarn pnpm \
     echo "❌ $cmd: Not found"
   fi
 done
+```
