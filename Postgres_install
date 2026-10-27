@@ -1,0 +1,12 @@
+# How to install Postgres on your local  
+  1. 'install brew and update it frist'
+      brew update
+  2.  Install Postgres using below command
+      brew install postgresql@15
+
+      Note : We can change the Postgres Version from as per the requirement @15, @16, @17, @18...
+
+  3. Verify the installation. 
+      /opt/homebrew/opt/postgresql@15/bin/postgres --version
+
+      expected output will be : postgres (PostgreSQL) 15.x
