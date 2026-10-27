@@ -10,3 +10,23 @@
       /opt/homebrew/opt/postgresql@15/bin/postgres --version
 
       expected output will be : postgres (PostgreSQL) 15.x
+  3. Add PostgreSQL 15 to your PATH
+      For your MacBook, check the Homebrew location:
+      brew --prefix
+      
+      If it returns /opt/homebrew, run:
+      echo 'export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"' >> ~/.zshrc
+      source ~/.zshrc
+      
+      
+      Verify:
+      psql --version
+
+  4.  Start Postgres 15 
+      brew services start postgresql@15
+
+  5.  to check the active service  
+      brew services list
+
+  6.  To login in the database 
+      psql -h localhost -d salesdb -p 5432 -U rishabh
